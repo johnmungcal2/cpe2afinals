@@ -1,0 +1,96 @@
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+  }
+
+  .calculator-header {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+  .calculator-container {
+    width: 250px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .output-display {
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+    flex: 30%;
+    border-radius: 5px;
+  }
+
+  .output-display .previous-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5em;
+  }
+
+  .output-display .current-operand {
+    color: white;
+    font-size: 2.5em;
+  }
+
+  .button-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+  }
+
+  .button-grid > button {
+    width: 50px;
+    height: 40px;
+    border: none;
+    font-size: 2em;
+    background-color: #303e5f;
+    color: #1991fb;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+  }
+
+  .button-grid > button.operation {
+    background-color: #1991fb;
+    color: white;
+    font-size: 1em;
+  }
+
+  .button-grid button:hover {
+    background-color: white;
+    color: #1991fb;
+  }
